@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.quiz-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.quiz-options {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-options li {
+  margin-bottom: 0.5rem;
+}
+
+.quiz-options input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.quiz-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.quiz-nav-buttons button {
+  padding: 0.8rem 1.5rem;
+  background-color: #fe9e0d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-nav-buttons button:hover {
+  background-color: #ff8a00;
+}
+
+.fade-in {
+    animation: fadeInAnimation-home 0.8s;
+}
+
+.primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+.text-gradient {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff8a00, #ffdcaf, #ff8a00);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 4s linear infinite;
+    animation-play-state: paused; /* Initially pause the animation */
+}
+
+.text-animate {
+    font-size: larger;
+    margin: 20px;
+    transition: font-size 1s ease-out, margin 1s ease-out;
+    /* Define your animation for the gradient here */
+    animation: gradientAnimation 2s infinite alternate;
+}
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  .quiz-question {
+    font-size: 1.2rem;
+  }
+}
+.quiz-summary {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quiz-summary button {
+  padding: 0.8rem 1.5rem;
+  background-color: #fe9e0d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-summary button:hover {
+  background-color: #ff8a00;
+}
